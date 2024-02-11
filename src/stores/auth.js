@@ -30,7 +30,7 @@ export const useAuthStore = defineStore("auth", {
           email: data.email,
           password: data.password,
         });
-        this.router.push("/");
+        this.router.push({name:'home'});
       } catch (error) {
         if (error.response.status === 422) {
           this.authErrors = error.response.data.errors;

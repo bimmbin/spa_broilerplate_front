@@ -12,22 +12,22 @@ const router = createRouter({
     {
       path: '/login',
       name: 'login',
-      component: () => import('../views/Login.vue')
+      component: () => import('../views/auth/Login.vue')
     },
     {
       path: '/register',
       name: 'register',
-      component: () => import('../views/Register.vue')
+      component: () => import('../views/auth/Register.vue')
     },
     {
       path: "/forgot-password",
       name: "ForgotPassword",
-      component: () => import('../views/ForgotPassword.vue')
+      component: () => import('../views/auth/ForgotPassword.vue')
     },
     {
       path: "/password-reset/:token",
       name: "ResetPassword",
-      component: () => import('../views/ResetPassword.vue')
+      component: () => import('../views/auth/ResetPassword.vue')
     },
     {
       path: "/checker",
